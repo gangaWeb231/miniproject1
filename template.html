@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.navbar {
+	position: sticky;
+	top: 0;
+	z-index: 1000; /* Ensure it stays above other content */
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	font-size: 17px;
+	letter-spacing: 3px;
+	border-bottom: 1px solid #ccc;
+}
+		.navbar a{
+			float: right;
+			display: block;
+			padding: 14px 16px;
+			text-decoration: none;
+			color: black;
+			text-align: center;
+		}
+		.navbar a:hover{
+			background-color: lightgray;
+
+		}
+		
+	   .image{
+	   	background: url(building.jpg) no-repeat center;
+	   	background-size: cover;
+	   	width: 1510px;
+	   	height:750px;
+	   	position: relative;
+	   }
+	   .text{
+	   	text-align: center;
+	   	position: absolute;
+	   	top: 50%;
+	   	left: 50%;
+	   	transform: translate(-50%,-50%);
+	   	letter-spacing: 4px;
+	   	color: white;
+	   }
+
+
+		
+		.gallery img{
+			width: 100%;
+			height: auto;
+			padding: 7px;	}
+		.desc{
+			padding: 15px;
+			text-align: center;
+		}
+		*{
+			box-sizing: border-box;
+		}
+		.responsive{
+			padding: 5 6px;
+			float: left;
+			
+			width: 24.99999%;
+			position: relative;
+			margin: 0;
+		}
+
+		@media only screen and (max-width:700px){
+			.responsive{
+				width: 49.99999%;
+				margin: 6px 0;
+			}
+		}
+
+		@media only screen and (max-width:500px){
+			.responsive{
+				width: 100%;
+			}
+		}
+		.clearfix:after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.left{
+			position: absolute;
+			top: 8px;
+			left: 8px;
+			overflow: hidden;
+			background-color: black;
+			color: white;
+			font-size: 28px;
+			background-size: cover;
+			padding: 8px;
+
+		}
+		.main{
+			float: left;
+			display: block;
+			padding: 10px;
+		}
+
+		.poloroid{
+			width:300px;
+			background-color: white;
+			margin-bottom: 25px;
+			padding: 5px 6px;
+			float: left;
+			
+			width: 24.99999%;
+			margin: 0;
+		}
+		.poloroid img{
+			width: 380px;
+			padding: 9px;
+		}
+		.container{
+			text-align: left;
+			padding: 10px 20px;
+		}
+		.button{
+			width: 300px;
+			height: 30px;
+		}
+        .form1 input{
+        	width: 100%;
+        	height: auto;
+        	padding: 7px;
+
+        }
+         .send{
+         	color: white; background-color: black;width: 200px; height: 35px;border: none;
+         }
+         .send:hover{
+         	background-color: lightgray;
+         	color: black;
+         }
+         .map{
+         	background: url(building2.jpg) no-repeat center;
+	   	background-size: cover;
+	   	width: 1510px;
+	   	height:750px;
+	   	position: relative;
+         }
+         .footer{
+         	background-color: black;
+         	padding: 20px;
+         	text-align: center;
+         	color: white;
+         }
+         .footer a{
+         	color: white;
+         }
+         #left{
+         	float: left;
+         }
+		
+
+	</style>
+</head>
+<body style="font-family: Arial,sans-serif;font-size: 20px;">
+	<div class="navbar">
+		<div class="one">
+			<a href="template.html" id="left"><b> BR </b> Architects</a>
+		</div>
+		<div class="two">
+			<a href="#projects">Projects</a>
+		<a href="#about">About</a>
+		<a href="#contact">Contact</a>
+	</div>
+	</div>
+	<div class="image">
+	<div class="text">
+		<h1><b style="background-color: black;">BR</b> Architects</h1>
+	</div>
+	</div>
+
+	<h1 id="projects">Projects</h1>
+	<br><hr style="opacity: 0.3;">
+	<div class="responsive">
+		<div class="gallery">
+			<img src="scotland.jpg" height="853px">
+			<div class="left">Scotland</div>
+		</div>
+			
+		</div>
+		<div class="responsive">
+		<div class="gallery">
+			<img src="house.jpg">
+			<div class="left">House</div>
+		</div>
+			
+		</div>
+		<div class="responsive">
+		<div class="gallery">
+			<img src="architecture.jpg">
+			<div class="left">Architecture</div>
+		</div>
+			
+		</div>
+		<div class="responsive">
+		<div class="gallery">
+			<img src="sevilla.jpg">
+			<div class="left">Sevilla</div>
+		</div>
+		</div>
+		<div class="responsive">
+		<div class="gallery">
+			<img src="scotland.jpg" height="853px">
+			<div class="left">Scotland</div>
+		</div>
+			
+		</div>
+		<div class="responsive">
+		<div class="gallery">
+			<img src="house.jpg">
+			<div class="left">House</div>
+		</div>
+			
+		</div>
+		<div class="responsive">
+		<div class="gallery">
+			<img src="architecture.jpg">
+			<div class="left">Architecture</div>
+		</div>
+			
+		</div>
+		<div class="responsive">
+		<div class="gallery">
+			<img src="sevilla.jpg">
+			<div class="left">Sevilla</div>
+		</div>
+		</div>
+		<div class="clearfix"></div>
+
+		<h1 id="about">About</h1>
+		<br><hr style="opacity: 0.3;">
+		<p style="font-size: 26px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<div class="main">
+		<div class="poloroid">
+			<img src="woman.jpg" >
+			<div class="container">
+				<h1 style="font-size:30px">John Doe</h1>
+				<h2 style="color:grey;font-size: 25px;">CEO & Founder</h2>
+				<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+				<input type="button" name="button" value="Contact" class="button">
+			</div>
+		</div>
+		<div class="poloroid">
+			<img src="girl.jpg" height="260px" >
+			<div class="container">
+				<h1 style="font-size:30px">Jane Doe</h1>
+				<h2 style="color:grey;font-size: 25px;">Architect</h2>
+				<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+				<input type="button" name="button" value="Contact" class="button">
+			</div>
+		</div>
+		<div class="poloroid">
+			<img src="baby.jpg" >
+			<div class="container">
+				<h1 style="font-size:30px">Mike Ross</h1>
+				<h2 style="color:grey;font-size: 25px;">Architect</h2>
+				<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+				<input type="button" name="button" value="Contact" class="button">
+			</div>
+		</div>
+		<div class="poloroid">
+			<img src="outdoors.jpg" >
+			<div class="container">
+				<h1 style="font-size:30px">Dan Star</h1>
+				<h2 style="color:grey;font-size: 25px;">Architect</h2>
+				<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+				<input type="button" name="button" value="Contact" class="button">
+			</div>
+		</div>
+	</div>
+
+	<h1 id="contact">Contact</h1>
+	<br><hr style="opacity: 0.3;">
+	<p>Lets get in touch and talk about your next project.</p>
+	<div class="form1">
+	<form>
+		<input type="text" name="name" placeholder="Name"><br><br>
+		<input type="email" name="email" placeholder="Email"><br><br>
+		<input type="text" name="subject" placeholder="Subject"><br><br>
+		<input type="text" name="comment" placeholder="Comment"><br><br>
+	</div>
+		<input type="button" name="button" value="SEND MESSAGE" class="send">
+	</form><br><br>
+	<div class="map"></div><br>
+	<div class="footer">
+		<p>Powered by <a href="https://www.w3schools.com/">w3.css</a> </p>
+	</div>
+
+</body>
+</html>
